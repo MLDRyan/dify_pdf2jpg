@@ -1,0 +1,21 @@
+[
+  {
+    "name": "pdf_url_to_jpg",
+    "description": "從 Dify 上傳的 PDF URL 中下載並轉換為 JPG 圖片",
+    "parameters": [
+      {
+        "name": "sys_files",
+        "type": "object",
+        "description": "Dify 上傳的 sys.files 陣列"
+      }
+    ],
+    "returns": [
+      {
+        "name": "images",
+        "type": "list",
+        "description": "轉換後的 JPG 圖片路徑"
+      }
+    ],
+    "python_function": "tools.pdf_url_to_jpg.pdf_url_to_jpg"
+  }
+]
